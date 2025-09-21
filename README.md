@@ -29,9 +29,9 @@ The program then uses regex (hate this stuff) to convert from ExprTK format to L
 #### Steps 
 
 ```
-git clone https://github.com/player0-glitch/Root-Finding.git 
+git clone https://github.com/player0-glitch/bisectionMethod.git 
 clone this repo
-cd (repo-name)
+cd bisectionMethod/
 
 #Give executable permissions to the build script in the project and run it 
 chmod +x build.sh
