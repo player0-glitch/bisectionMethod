@@ -1,5 +1,5 @@
 .*
 !.git/
 build/
-.cache/
+.cache/clangd/index/
 temp.txt
