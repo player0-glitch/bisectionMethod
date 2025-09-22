@@ -1,4 +1,5 @@
 .*
 !.git/
 build/
-.cache/clang/index/
+.cache/
+temp.txt
