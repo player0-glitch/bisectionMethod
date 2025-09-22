@@ -34,14 +34,24 @@ void splash() {
 
   int font_index = dist(mt);
   // create the splash screen to use figlet fonts
+  using std::println;
+  println("=================================================================");
   int figlet = std::system(
-      ("figlet  -cf " + (fonts[font_index]) + " Bisection Method Root Finder")
-          .c_str());
+      ("figlet  -cf " + (fonts[font_index]) + " Bisection Method").c_str());
   if (figlet != 0) {
     std::cerr << "Error: figlet command failed to execute. " << figlet
               << std::endl;
     // exit(1); // exit the program
   }
+  const char *bold_italics = "\033[1;3m";      // \033[1;3m -> Bold + Italics
+  const char *reset_terminal_font = "\033[0m"; // \003[0m -> reset formatting
+  println("{}\tNumerical Method Solver (Root Finding Program)", bold_italics,
+          reset_terminal_font);
+  println("{}\t\tMethod: Bisection Method{}", bold_italics,
+          reset_terminal_font);
+  println("Natural Log: ln(x)\nExponential: e^x");
+  println("Log: log(x)\nx raised to: x^2");
+  println("=================================================================");
 }
 // converts the user input to latex format
 string convertToLatex(const string &expression) {

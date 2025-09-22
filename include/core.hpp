@@ -5,9 +5,10 @@
 
 namespace core {
 
-enum FONTS { BIG = 0, BLOCK, SLANT };
+enum FONTS { BIG = 0, BANNER, SLANT, SMSCRIPT, BUBBLE };
 
-inline std::array<std::string, 3> fonts{"big", "block", "slant"};
+inline std::array<std::string, 5> fonts{"big", "banner", "slant", "smscript",
+                                        "bubble"};
 // convert user input and later input for parser friendly format
 std::string convertToParser(const std::string &expression);
 void openLatexDoc(std::ofstream &LaTex);
