@@ -50,7 +50,7 @@ void splash() {
   println("{}\t\tMethod: Bisection Method{}", bold_italics,
           reset_terminal_font);
   println("Natural Log: ln(x)\nExponential: e^x");
-  println("Log: log(x)\nx raised to: x^2");
+  println("Log: log(x)\nx raised to a: x^a");
   println("=================================================================");
 }
 // converts the user input to latex format
